@@ -1,0 +1,18 @@
+.container {
+    width: 87%;
+    max-width: $large;
+    margin: 0 auto;
+    
+    /* added for nav-toggle positioning */
+    position: relative;
+}
+
+.row {
+    @include for-tablet-landscape-up {
+        display: flex;
+        justify-content: space-between;
+
+    }
+}
+
+
