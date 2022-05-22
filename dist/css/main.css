@@ -24,8 +24,8 @@
 
 body {
   margin: 0;
-  font-family: 'Sofia Pro', sans-serif;
   font-size: 1.3rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Sofia Pro', sans-serif;
 }
 
 img {
