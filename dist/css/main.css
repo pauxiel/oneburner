@@ -24,7 +24,7 @@
 
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Sofia Pro', sans-serif;
   font-size: 1.3rem;
 }
 
@@ -218,6 +218,7 @@ header {
 
 .hero h1 {
   color: #462686;
+  font-weight: 700;
 }
 
 .hero__img {
@@ -226,7 +227,7 @@ header {
 
 @media (min-width: 56.25em) {
   .hero__img {
-    width: 50%;
+    width: 49%;
     -ms-flex-item-align: start;
         align-self: flex-start;
     margin: 0;
@@ -236,7 +237,7 @@ header {
 
 @media (min-width: 56.25em) {
   .hero__text {
-    width: 35%;
+    width: 33%;
     padding: 100px 0;
   }
 }
