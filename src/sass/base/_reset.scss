@@ -2,12 +2,19 @@
     box-sizing: border-box;
 }
 
+html {
+    -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, 'Sofia', cursive;
+ 
+}
+
 body {
     margin: 0;
     // font-family: 'Sofia Pro', sans-serif;
     font-size: 1.3rem;
     // font-family:  -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif !default;
-    font-family: -apple-system, BlinkMacSystemFont, 'Sofia Pro', sans-serif;
+  
 }
 
 img {
