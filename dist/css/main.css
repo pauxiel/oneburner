@@ -17,6 +17,11 @@
   }
 }
 
+@font-face {
+  font-family: 'sofia Pro';
+  src: url(/dist/Fonts/sofiapro-light.otf);
+}
+
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -25,7 +30,7 @@
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: -apple-system, BlinkMacSystemFont, 'Sofia', cursive;
+  font-family: -apple-system, BlinkMacSystemFont, 'Sofia Pro', sans-serif;
 }
 
 body {
