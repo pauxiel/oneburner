@@ -138,19 +138,19 @@
         max-width: 20%;
     }
 
-    // @include for-tablet-portrait-up {
-
-    //     height:  40px;
-    //     &__img {
-    //         max-width: 30%;
-    //       }
-    // }
+    @include for-phone-only {
+       
+        &__img {
+            max-width: 25%;
+          }
+    }
 
 
     @include for-tablet-landscape-up {
         height: 51px;
+        display: flex;
        &__img {
-        max-width: 60%;
+        max-width: 100%;
         float: left;
       }
     }

@@ -1,0 +1,41 @@
+.client {
+
+    &__text {
+        text-align: center;
+     
+    }
+
+    &__brand-wrapper {
+    padding-bottom: 45px;
+    border-bottom: 1px solid#e5e5e5;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin: 0 -20px;
+
+    @include for-tablet-landscape-up {
+        flex-wrap: nowrap;
+        align-items: center;
+      }
+    }
+
+    .single-brand {
+        margin: 0 20px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        // filter: grayscale(100%);
+        opacity: 0.8;
+        transition: .4s;
+        @include for-tablet-landscape-up {
+            flex-basis:calc(20% - 40px );
+            max-width:calc(20% - 40px );
+        }
+        &:first-child {
+            margin-left: 0;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
