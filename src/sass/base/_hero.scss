@@ -7,7 +7,21 @@
     h1 {
         color: #462686;
         font-weight: 700;
+        font-size: 35px;
         
+    }
+
+    p {
+        padding-bottom: 2em;
+        line-height: 33px;
+    }
+
+
+    &__btn {
+             padding: 1.25em 3em;
+             background:#462686;
+             color: #fff !important;
+             border-radius: 100px;
     }
    
 
@@ -26,7 +40,7 @@
 
         &__text {
             @include for-tablet-landscape-up {
-                width: 33%;
+                width: 38%;
                 padding: 100px 0;
             }
 

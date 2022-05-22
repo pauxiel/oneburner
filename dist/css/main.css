@@ -224,6 +224,19 @@ header {
 .hero h1 {
   color: #462686;
   font-weight: 700;
+  font-size: 35px;
+}
+
+.hero p {
+  padding-bottom: 2em;
+  line-height: 33px;
+}
+
+.hero__btn {
+  padding: 1.25em 3em;
+  background: #462686;
+  color: #fff !important;
+  border-radius: 100px;
 }
 
 .hero__img {
@@ -242,7 +255,7 @@ header {
 
 @media (min-width: 56.25em) {
   .hero__text {
-    width: 33%;
+    width: 38%;
     padding: 100px 0;
   }
 }
