@@ -5,6 +5,13 @@
      
     }
 
+
+    &__02 {
+        @include for-phone-only {
+            display: none;
+        }
+    }
+
     &__brand-wrapper {
     padding-bottom: 40px;
     display: flex;

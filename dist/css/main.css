@@ -274,6 +274,12 @@ header {
   text-align: center;
 }
 
+@media (max-width: 37.4375em) {
+  .client__02 {
+    display: none;
+  }
+}
+
 .client__brand-wrapper {
   padding-bottom: 40px;
   display: -webkit-box;
@@ -334,7 +340,7 @@ header {
   padding-right: 1rem;
 }
 
-.flex-row {
+.flex-row, .flex-row--nowrap {
   margin-left: -1rem;
   margin-right: -1rem;
 }
@@ -356,6 +362,16 @@ header {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+}
+
+.flex-row--nowrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .flex-small,
@@ -445,5 +461,36 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.support-section__image > img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 60%;
+}
+
+.support-section__icon {
+  width: 40%;
+}
+
+.support-section__icon .icon-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+}
+
+.support-section__icon .icon-box > img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 30%;
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=main.css.map */

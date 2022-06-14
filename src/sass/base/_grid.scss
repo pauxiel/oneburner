@@ -26,6 +26,14 @@
    &--reverse {
      flex-direction: row-reverse;
    }
+
+ }
+
+ .flex-row--nowrap {
+  @extend %row-margin;
+  display: flex;
+  flex-direction: row;
+ 
  }
  
  .flex-small,
