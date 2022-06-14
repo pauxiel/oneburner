@@ -39,9 +39,11 @@
 
 
         &__text {
+            
             @include for-tablet-landscape-up {
                 width: 38%;
                 padding: 100px 0;
+                
             }
 
             

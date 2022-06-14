@@ -8,11 +8,21 @@
 }
 
 .row {
+    
     @include for-tablet-landscape-up {
         display: flex;
         justify-content: space-between;
+        
 
     }
 }
+
+
+.content-section {
+    padding: 30px 0 1px;
+    @include for-tablet-landscape-up {
+      padding: 60px 0 1px;
+    }
+  }
 
 
