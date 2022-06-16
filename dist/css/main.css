@@ -463,6 +463,10 @@ header {
           justify-content: center;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .support-section__image > img {
   -o-object-fit: contain;
      object-fit: contain;
@@ -492,5 +496,10 @@ header {
      object-fit: contain;
   width: 30%;
   margin-bottom: 20px;
+}
+
+.trial-section {
+  background-color: yellow;
+  height: 300px;
 }
 /*# sourceMappingURL=main.css.map */
