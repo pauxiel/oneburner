@@ -1,18 +1,64 @@
 .footer-main {
     display: flex;
     flex-wrap: wrap;
-    font-size: 1rem;
+    // font-size: 1rem;
+
+    @include for-tablet-portrait-up  {
+
+        &__address {
+            flex-grow: 1;
+        }
+
+        &__nav-list {
+            flex-grow: 1;
+        }
+    }
+  
+     
+    
     
     @include for-desktop-up {
         &__address {
             width: 50%;
-            padding: 1.25rem;
+            // padding: 1.25rem;
         }
     
         &__nav-list {
             width: 12.5%;
-            padding: 1.25rem;
+            // padding: 1.25rem;
+        }
+    }
+
+
+
+
+    
+}
+
+
+.social {
+    display: flex;
+
+    li {
+        height: 2rem;
+        margin-right: 0.5rem;
+        text-align: center;
+        width: 2rem;
+
+        a {
+            align-items: center;
+            display: flex;
+            font-size: 1.5rem;
+            height: 2rem;
+            justify-content: center;
+            width: 2rem;
         }
     }
     
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
