@@ -25,4 +25,19 @@
     }
   }
 
+  h2 {
+    font-weight: 400;
+    color: #333333;
+
+//    @include for-desktop-up {
+
+//    }
+
+    @include for-tablet-landscape-up {
+        width: 70%;
+        
+    }
+      
+  }
+
 
