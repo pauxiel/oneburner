@@ -1,5 +1,19 @@
 .client {
 
+
+&__heading {
+    display: flex;
+    justify-content: center;
+
+    h2 {
+        width: 60%;
+        padding-bottom: 52px;
+
+        @include for-tablet-landscape-up {
+           width: 40%;
+        }
+    }
+}
     &__text {
         text-align: center;
      

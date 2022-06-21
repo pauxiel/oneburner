@@ -199,7 +199,7 @@ ul {
   -webkit-transition: opacity 250ms ease;
   transition: opacity 250ms ease;
   position: absolute;
-  left: 0;
+  right: 0;
   top: 10px;
 }
 
@@ -308,6 +308,26 @@ header {
   .hero__text {
     width: 38%;
     padding: 100px 0;
+  }
+}
+
+.client__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.client__heading h2 {
+  width: 60%;
+  padding-bottom: 52px;
+}
+
+@media (min-width: 56.25em) {
+  .client__heading h2 {
+    width: 40%;
   }
 }
 

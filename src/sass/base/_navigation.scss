@@ -86,7 +86,7 @@
     color:  #072A2D;
     transition: opacity 250ms ease;
     position: absolute;
-    left: 0;
+    right: 0;
     top: 10px;
     
     @include for-phone-only {
