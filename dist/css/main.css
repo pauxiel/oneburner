@@ -591,8 +591,13 @@ header {
 }
 
 .trial-section {
-  background-color: yellow;
+  background-color: #7837F8;
+  color: #ffffff;
   height: 300px;
+}
+
+.trial-section h1 {
+  color: #ffffff;
 }
 
 .footer-main {
