@@ -546,6 +546,7 @@ header {
 .support-section__icon {
   width: 40%;
   text-align: center;
+  font-size: 0.9rem;
 }
 
 @media (max-width: 56.25em) {
@@ -560,6 +561,7 @@ header {
         -ms-flex-pack: center;
             justify-content: center;
     width: 100%;
+    padding-top: 1rem;
   }
 }
 

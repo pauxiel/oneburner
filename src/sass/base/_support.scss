@@ -1,5 +1,7 @@
 .support-section {
 
+
+  
   .flex-row--nowrap {
 
     @include for-tablet-landscape-down {
@@ -28,12 +30,14 @@
         // flex-direction: column;
         // justify-content: space-around;
         text-align: center;
+        font-size: $body-font-size;
 
         @include for-tablet-landscape-down {
           display: flex;
           align-items: baseline;
           justify-content: center;
           width: 100%;
+          padding-top: 1rem;
 
         }
         .icon-box {
