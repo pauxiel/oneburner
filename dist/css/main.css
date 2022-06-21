@@ -603,6 +603,10 @@ header {
       flex-wrap: wrap;
 }
 
+.footer-main__nav-list {
+  padding-right: 1rem;
+}
+
 .footer-main a {
   color: rgba(1, 0, 29, 0.6);
 }
@@ -626,6 +630,24 @@ header {
   }
   .footer-main__nav-list {
     width: 14%;
+  }
+}
+
+@media (min-width: 56.25em) {
+  .footer-main__address {
+    width: 30%;
+  }
+  .footer-main__nav-list {
+    width: 17.5%;
+  }
+}
+
+@media (max-width: 37.4375em) {
+  .footer-main__address {
+    width: 100%;
+  }
+  .footer-main__nav-list {
+    width: 50%;
   }
 }
 
