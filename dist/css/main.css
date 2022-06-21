@@ -1,3 +1,8 @@
+h1 {
+  color: #462686;
+  font-weight: 700;
+}
+
 .container {
   width: 87%;
   max-width: 75em;
@@ -28,13 +33,13 @@
 }
 
 h2 {
-  font-weight: 400;
   color: #333333;
+  font-weight: 400;
 }
 
 @media (min-width: 56.25em) {
   h2 {
-    width: 70%;
+    width: 69%;
   }
 }
 
@@ -51,7 +56,37 @@ html {
 
 body {
   margin: 0;
+  color: #454545;
   font-size: 1.2rem;
+}
+
+p {
+  font-size: 0.9rem;
+  line-height: 33px;
+}
+
+h1 {
+  font-size: 1.68rem !important;
+}
+
+h2 {
+  font-size: 1.19rem !important;
+}
+
+h3 {
+  font-size: 0.8rem !important;
+}
+
+@media (min-width: 37.5em) {
+  h1 {
+    font-size: 2.18rem !important;
+  }
+  h2 {
+    font-size: 1.69rem !important;
+  }
+  h3 {
+    font-size: 0.9rem !important;
+  }
 }
 
 img {
@@ -62,7 +97,7 @@ a,
 a:visited,
 a:hover {
   text-decoration: none;
-  color: #01001D99;
+  font-size: 0.9rem;
 }
 
 ul {
@@ -244,19 +279,8 @@ header {
   text-align: center;
 }
 
-.hero {
-  color: #454545;
-}
-
-.hero h1 {
-  color: #462686;
-  font-weight: 700;
-  font-size: 35px;
-}
-
 .hero p {
   padding-bottom: 2em;
-  line-height: 33px;
 }
 
 .hero__btn {
@@ -579,6 +603,10 @@ header {
       flex-wrap: wrap;
 }
 
+.footer-main a {
+  color: rgba(1, 0, 29, 0.6);
+}
+
 @media (min-width: 37.5em) {
   .footer-main__address {
     -webkit-box-flex: 1;
@@ -594,10 +622,10 @@ header {
 
 @media (min-width: 75em) {
   .footer-main__address {
-    width: 50%;
+    width: 44%;
   }
   .footer-main__nav-list {
-    width: 12.5%;
+    width: 14%;
   }
 }
 
@@ -638,5 +666,11 @@ header {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+@media (min-width: 75em) {
+  #last-one {
+    padding-left: 4rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */

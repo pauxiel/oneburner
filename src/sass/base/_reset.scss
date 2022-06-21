@@ -6,18 +6,64 @@
 }
 
 html {
-    -webkit-font-smoothing: antialiased;
+  //   -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
+  // font-family: 'Poppins', sans-serif;
+
+  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  // font: $font-style $font-variant $font-weight #{$font-size}/#{$line-height} $font-family;
   font-family: 'Poppins', sans-serif;
+  // font-size: $font-size;
  
 }
 
 body {
+    // margin: 0;
+    // font-size: 1.2rem;
+
     margin: 0;
-    // font-family: 'Sofia Pro', sans-serif;
-    font-size: 1.2rem;
-    // font-family:  -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif !default;
+    // font-size: $body-font-size;
+    color: $font-color;
+    font-size: $font-size;
+    
+    
   
+}
+
+p {
+  font-size: $body-font-size;
+  line-height: 33px;
+}
+
+
+// Heading individual styles
+h1 {
+  font-size: $h1-mobile !important;
+}
+
+h2 {
+  font-size: $h2-mobile !important;
+}
+
+h3 {
+  font-size: $h3-mobile !important;
+}
+
+@include for-tablet-portrait-up {
+
+  h1 {
+    font-size: $h1 !important;
+  }
+
+  h2 {
+    font-size: $h2 !important;
+  }
+
+  h3 {
+    font-size: $h3 !important;
+  }
+
 }
 
 img {
@@ -29,7 +75,7 @@ a,
 a:visited,
 a:hover {
   text-decoration: none;
-  color:#01001D99;
+  font-size: 0.9rem;
   ;
   
   

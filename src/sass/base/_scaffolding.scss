@@ -1,0 +1,9 @@
+h2 {
+    color: $heading-two-font-color;
+    font-weight: $heading-two-font-weight;
+
+    @include for-tablet-landscape-up {
+        width: 69%;
+        
+    }
+}

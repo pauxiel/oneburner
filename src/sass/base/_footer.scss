@@ -3,6 +3,13 @@
     flex-wrap: wrap;
     // font-size: 1rem;
 
+   
+
+    a {
+        color: rgba(1, 0, 29, 0.6);
+    }
+
+
     @include for-tablet-portrait-up  {
 
         &__address {
@@ -11,6 +18,10 @@
 
         &__nav-list {
             flex-grow: 1;
+
+
+
+           
         }
     }
   
@@ -19,12 +30,12 @@
     
     @include for-desktop-up {
         &__address {
-            width: 50%;
+            width: 44%;
             // padding: 1.25rem;
         }
     
         &__nav-list {
-            width: 12.5%;
+            width: 14%;
             // padding: 1.25rem;
         }
     }
@@ -69,3 +80,11 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+
+#last-one {
+    @include for-desktop-up {
+        padding-left: 4rem;
+    }
+}
+
