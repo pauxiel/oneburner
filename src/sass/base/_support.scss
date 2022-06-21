@@ -1,11 +1,24 @@
 .support-section {
 
+  .flex-row--nowrap {
+
+    @include for-tablet-landscape-down {
+      flex-direction: column-reverse;
+    }
+    
+  }
+
     &__image {
         // width: 50%;
         > img {
           object-fit: contain;
           width: 60%;
           //   margin-left: 20px;
+        }
+
+        @include for-tablet-landscape-down {
+          display: flex;
+          justify-content: center;
         }
       }
 
@@ -14,11 +27,24 @@
         // display: flex;
         // flex-direction: column;
         // justify-content: space-around;
+        text-align: center;
+
+        @include for-tablet-landscape-down {
+          display: flex;
+          align-items: baseline;
+          justify-content: center;
+          width: 100%;
+
+        }
         .icon-box {
           display: flex;
           flex-direction: column;
           align-items: center;
           margin-bottom: 2rem;
+
+          @include for-tablet-landscape-down {
+            padding-left: 1.5rem;
+          }
           > img {
             object-fit: contain;
             width: 30%;
@@ -27,3 +53,7 @@
         }
       }
 }
+
+
+// align-item: baseline for support icon width 100%
+// justify-content: center
