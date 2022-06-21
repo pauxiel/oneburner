@@ -1,157 +1,145 @@
 .nav {
-    width: 100%;
-    visibility: hidden;
-    height: 0;
-    position: absolute;
-    font-size: 1rem;
+  width: 100%;
+  visibility: hidden;
+  height: 0;
+  position: absolute;
+  font-size: 1rem;
+
+  @include for-tablet-landscape-up {
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    height: auto;
+    position: relative;
+    justify-content: flex-end;
+  }
+
+  &__link {
+    color: #454545;
+
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      opacity: 0.65;
+    }
+
+    &--button {
+      padding: 0.5em 1em;
+      background: #462686;
+      color: #fff !important;
+      border-radius: 100px;
+    }
+  }
+
+  &--visible {
+    visibility: visible;
+    height: auto;
+    position: relative;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 
     @include for-tablet-landscape-up {
-        visibility: visible;
-        display: flex;
-        align-items: center;
-        height: auto;
-        position: relative;
-        justify-content: flex-end;
+      display: flex;
+      margin: 0;
     }
 
-    &__link {
-        color: #454545;
+    &--primary {
+      margin-bottom: 2em;
 
-        text-decoration: none;
-
-        &:hover,
-        &:focus {
-            opacity: .65;
-        }
-
-         &--button {
-            padding: .5em 1em;
-             background:#462686;
-             color: #fff !important;
-             border-radius: 100px;
-        }
-
-
+      @include for-tablet-landscape-up {
+        margin: 0 auto 0 0;
+      }
     }
+  }
 
-    &--visible {
-        visibility: visible;
-        height: auto;
-        position: relative;
+  &__item {
+    margin-top: 0.75em;
+    @include for-tablet-landscape-up {
+      margin: 0 0 0 1.5em;
     }
-
-    &__list {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-
-        @include for-tablet-landscape-up {
-            display: flex;
-            margin: 0;
-        }
-
-        &--primary {
-            margin-bottom: 2em; 
-
-            
-            @include for-tablet-landscape-up {
-                margin: 0 auto 0 0;
-            }
-        }
-
-       
-
-
-    }
-
-    &__item {
-        margin-top: .75em;
-        @include for-tablet-landscape-up {
-            margin: 0 0 0 1.5em;
-        }
-        
-    }
+  }
 }
 
-
-
 .nav-toggle {
-    cursor: pointer;
-    border: 0;
-    width: 3em;
-    height: 3em;
-    padding: 0em;
-    border-radius: 50%;
-    background: white;
-    color:  #072A2D;
-    transition: opacity 250ms ease;
-    position: absolute;
-    right: 0;
-    top: 10px;
-    
-    @include for-phone-only {
-        top: 0px;
-    }
+  cursor: pointer;
+  border: 0;
+  width: 3em;
+  height: 3em;
+  padding: 0em;
+  border-radius: 50%;
+  background: white;
+  color: #072a2d;
+  transition: opacity 250ms ease;
+  position: absolute;
+  right: 0;
+  top: 10px;
 
-    @include for-tablet-landscape-up {
-        display: none;
-    }
+  @include for-phone-only {
+    top: 0px;
+  }
 
-    &:focus,
-    &:hover {
-        opacity: .75;
-    }
+  @include for-tablet-landscape-up {
+    display: none;
+  }
+
+  &:focus,
+  &:hover {
+    opacity: 0.75;
+  }
 }
 
 .hamburger {
-    width: 50%;
-    position: relative;
+  width: 50%;
+  position: relative;
 
+  display: block;
+  margin: 0 auto;
+  height: 3px;
+  // background: white;
+  background: #072a2d;
+  &::before,
+  &::after {
     display: block;
     margin: 0 auto;
     height: 3px;
     // background: white;
-    background:  #072A2D;
-    &::before,
-    &::after {
-        display: block;
-        margin: 0 auto;
-        height: 3px;
-        // background: white;
-        background:  #072A2D;
-        content: '';
-        width: 100%;
-    }
+    background: #072a2d;
+    content: "";
+    width: 100%;
+  }
 
-    &::before {
-        transform: translateY(-6px);
-    }
+  &::before {
+    transform: translateY(-6px);
+  }
 
-    &::after {
-        transform: translateY(3px);
-    }
+  &::after {
+    transform: translateY(3px);
+  }
 }
 
 .logo {
-    height: 30px;
+  height: 30px;
+  &__img {
+    max-width: 20%;
+  }
+
+  @include for-phone-only {
     &__img {
-        max-width: 20%;
+      max-width: 25%;
     }
+  }
 
-    @include for-phone-only {
-       
-        &__img {
-            max-width: 25%;
-          }
+  @include for-tablet-landscape-up {
+    height: 51px;
+    display: flex;
+    &__img {
+      max-width: 100%;
+      float: left;
     }
-
-
-    @include for-tablet-landscape-up {
-        height: 51px;
-        display: flex;
-       &__img {
-        max-width: 100%;
-        float: left;
-      }
-    }
+  }
 }

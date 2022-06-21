@@ -1,118 +1,87 @@
 .footer-main {
-    display: flex;
-    flex-wrap: wrap;
-    // font-size: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  // font-size: 1rem;
 
+  &__nav-list {
+    padding-right: 1rem;
+  }
 
+  a {
+    color: rgba(1, 0, 29, 0.6);
+  }
 
-    &__nav-list {
-        padding-right: 1rem;
-    }
-
-   
-
-    a {
-        color: rgba(1, 0, 29, 0.6);
-    }
-
-
-    @include for-tablet-portrait-up  {
-
-        &__address {
-            flex-grow: 1;
-        }
-
-        &__nav-list {
-            flex-grow: 1;
-
-
-
-
-           
-        }
-    }
-  
-     
-    
-    
-    @include for-desktop-up {
-        &__address {
-            width: 44%;
-            // padding: 1.25rem;
-        }
-    
-        &__nav-list {
-            width: 14%;
-            // padding: 1.25rem;
-        }
-    }
-
-    @include for-tablet-landscape-up {
-        &__address {
-            width: 30%;
-        }
-
-        &__nav-list {
-            width: 17.5%
-        }
-    }
-
-
-  @include for-phone-only {
+  @include for-tablet-portrait-up {
     &__address {
-        width: 100%;
+      flex-grow: 1;
     }
 
     &__nav-list {
-        width: 50%
+      flex-grow: 1;
     }
   }
 
+  @include for-desktop-up {
+    &__address {
+      width: 44%;
+      // padding: 1.25rem;
+    }
 
+    &__nav-list {
+      width: 14%;
+      // padding: 1.25rem;
+    }
+  }
 
+  @include for-tablet-landscape-up {
+    &__address {
+      width: 30%;
+    }
 
-    
+    &__nav-list {
+      width: 17.5%;
+    }
+  }
+
+  @include for-phone-only {
+    &__address {
+      width: 100%;
+    }
+
+    &__nav-list {
+      width: 50%;
+    }
+  }
 }
 
-
-
-// everything 44%
-// part 14%
-// 0.9rem
-// padding-left: 3rem
-
-
 .social {
-    display: flex;
+  display: flex;
 
-    li {
-        height: 2rem;
-        margin-right: 0.5rem;
-        text-align: center;
-        width: 2rem;
+  li {
+    height: 2rem;
+    margin-right: 0.5rem;
+    text-align: center;
+    width: 2rem;
 
-        a {
-            align-items: center;
-            display: flex;
-            font-size: 1.5rem;
-            height: 2rem;
-            justify-content: center;
-            width: 2rem;
-        }
+    a {
+      align-items: center;
+      display: flex;
+      font-size: 1.5rem;
+      height: 2rem;
+      justify-content: center;
+      width: 2rem;
     }
-    
+  }
 }
 
 .footer-logo {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-
 
 #last-one {
-    @include for-desktop-up {
-        padding-left: 4rem;
-    }
+  @include for-desktop-up {
+    padding-left: 4rem;
+  }
 }
-

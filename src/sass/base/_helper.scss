@@ -1,26 +1,22 @@
 // Vertical center
 .vertical-center {
-    display: flex;
-    align-items: center;
-    // justify-content: center;
+  display: flex;
+  align-items: center;
+  // justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.padding-right {
+  @include for-tablet-landscape-up {
+    padding-right: 9rem;
   }
+}
 
-
-  .text-center {
-    text-align: center;
+.padding-left {
+  @include for-tablet-landscape-up {
+    padding-right: 9rem;
   }
-
-  .padding-right {
-
-    @include for-tablet-landscape-up {
-      padding-right: 9rem;
-    }
-    
-  } 
-
-  .padding-left {
-
-    @include for-tablet-landscape-up {
-      padding-right: 9rem;
-    }
-  }
+}

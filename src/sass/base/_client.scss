@@ -1,32 +1,28 @@
 .client {
-
-
-&__heading {
+  &__heading {
     display: flex;
     justify-content: center;
 
     h2 {
-        width: 60%;
-        padding-bottom: 52px;
+      width: 60%;
+      padding-bottom: 52px;
 
-        @include for-tablet-landscape-up {
-           width: 40%;
-        }
+      @include for-tablet-landscape-up {
+        width: 40%;
+      }
     }
-}
-    &__text {
-        text-align: center;
-     
+  }
+  &__text {
+    text-align: center;
+  }
+
+  &__02 {
+    @include for-phone-only {
+      display: none;
     }
+  }
 
-
-    &__02 {
-        @include for-phone-only {
-            display: none;
-        }
-    }
-
-    &__brand-wrapper {
+  &__brand-wrapper {
     padding-bottom: 40px;
     display: flex;
     justify-content: center;
@@ -35,27 +31,27 @@
     margin: 0 -20px;
 
     @include for-tablet-landscape-up {
-        flex-wrap: nowrap;
-        align-items: center;
-      }
+      flex-wrap: nowrap;
+      align-items: center;
     }
+  }
 
-    .single-brand {
-        margin: 0 20px;
-        padding-bottom: 15px;
-        padding-top: 15px;
-        // filter: grayscale(100%);
-        opacity: 0.8;
-        transition: .4s;
-        @include for-tablet-landscape-up {
-            flex-basis:calc(20% - 40px );
-            max-width:calc(20% - 40px );
-        }
-        &:first-child {
-            margin-left: 0;
-        }
-        &:last-child {
-            margin-right: 0;
-        }
+  .single-brand {
+    margin: 0 20px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    // filter: grayscale(100%);
+    opacity: 0.8;
+    transition: 0.4s;
+    @include for-tablet-landscape-up {
+      flex-basis: calc(20% - 40px);
+      max-width: calc(20% - 40px);
     }
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
